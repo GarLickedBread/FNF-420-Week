@@ -1,19 +1,11 @@
 package;
 
 import flixel.system.FlxAssets.FlxShader;
-import openfl.display.BitmapData;
-import openfl.display.ShaderInput;
-import openfl.utils.Assets;
-import flixel.FlxG;
-import openfl.Lib;
-import flixel.math.FlxPoint;
-//thx andromeda engine for da ports 
-using StringTools;
-typedef ShaderEffect = {
-  var shader:Dynamic;
-}
 
-class GlitchEffect extends Effect 
+
+
+
+class GlitchEffect
 {
     public var shader(default,null):GlitchShader = new GlitchShader();
 
@@ -54,12 +46,113 @@ class GlitchEffect extends Effect
     }
 
 }
- 
+
+class DistortBGEffect
+{
+    public var shader(default,null):DistortBGShader = new DistortBGShader();
+
+    public var waveSpeed(default, set):Float = 0;
+	public var waveFrequency(default, set):Float = 0;
+	public var waveAmplitude(default, set):Float = 0;
+
+	public function new():Void
+	{
+		shader.uTime.value = [0];
+	}
+
+    public function update(elapsed:Float):Void
+    {
+        shader.uTime.value[0] += elapsed;
+    }
+
+
+    function set_waveSpeed(v:Float):Float
+    {
+        waveSpeed = v;
+        shader.uSpeed.value = [waveSpeed];
+        return v;
+    }
+    
+    function set_waveFrequency(v:Float):Float
+    {
+        waveFrequency = v;
+        shader.uFrequency.value = [waveFrequency];
+        return v;
+    }
+    
+    function set_waveAmplitude(v:Float):Float
+    {
+        waveAmplitude = v;
+        shader.uWaveAmplitude.value = [waveAmplitude];
+        return v;
+    }
+
+}
+
+
+class PulseEffect
+{
+    public var shader(default,null):PulseShader = new PulseShader();
+
+    public var waveSpeed(default, set):Float = 0;
+	public var waveFrequency(default, set):Float = 0;
+	public var waveAmplitude(default, set):Float = 0;
+    public var Enabled(default, set):Bool = false;
+
+	public function new():Void
+	{
+		shader.uTime.value = [0];
+        shader.uampmul.value = [0];
+        shader.uEnabled.value = [false];
+	}
+
+    public function update(elapsed:Float):Void
+    {
+        shader.uTime.value[0] += elapsed;
+    }
+
+
+    function set_waveSpeed(v:Float):Float
+    {
+        waveSpeed = v;
+        shader.uSpeed.value = [waveSpeed];
+        return v;
+    }
+
+    function set_Enabled(v:Bool):Bool
+    {
+        Enabled = v;
+        shader.uEnabled.value = [Enabled];
+        return v;
+    }
+    
+    function set_waveFrequency(v:Float):Float
+    {
+        waveFrequency = v;
+        shader.uFrequency.value = [waveFrequency];
+        return v;
+    }
+    
+    function set_waveAmplitude(v:Float):Float
+    {
+        waveAmplitude = v;
+        shader.uWaveAmplitude.value = [waveAmplitude];
+        return v;
+    }
+
+}
+
+
+class InvertColorsEffect
+{
+    public var shader(default,null):InvertShader = new InvertShader();
+
+}
+
 class GlitchShader extends FlxShader
 {
     @:glFragmentSource('
-    #pragma header 
-
+    #pragma header
     //uniform float tx, ty; // x,y waves phase
 
     //modified version of the wave shader to create weird garbled corruption like messes
@@ -103,49 +196,32 @@ class GlitchShader extends FlxShader
     {
        super();
     }
-} 
-
-class DistortBGEffect extends Effect
-{
-    public var shader(default,null):DistortBGShader = new DistortBGShader();
-
-    public var waveSpeed(default, set):Float = 0;
-	public var waveFrequency(default, set):Float = 0;
-	public var waveAmplitude(default, set):Float = 0;
-
-	public function new():Void
-	{
-		shader.uTime.value = [0];
-	}
-
-    public function update(elapsed:Float):Void
-    {
-        shader.uTime.value[0] += elapsed;
-    }
-
-
-    function set_waveSpeed(v:Float):Float
-    {
-        waveSpeed = v;
-        shader.uSpeed.value = [waveSpeed];
-        return v;
-    }
-    
-    function set_waveFrequency(v:Float):Float
-    {
-        waveFrequency = v;
-        shader.uFrequency.value = [waveFrequency];
-        return v;
-    }
-    
-    function set_waveAmplitude(v:Float):Float
-    {
-        waveAmplitude = v;
-        shader.uWaveAmplitude.value = [waveAmplitude];
-        return v;
-    }
-
 }
+
+class InvertShader extends FlxShader
+{
+    @:glFragmentSource('
+    #pragma header
+    
+
+    vec4 sineWave(vec4 pt)
+    {
+        return vec4(1.0 - pt.x, 1.0 - pt.y, 1.0 - pt.z, pt.w);
+    }
+
+    void main()
+    {
+        vec2 uv = openfl_TextureCoordv;
+        gl_FragColor = sineWave(texture2D(bitmap, uv));
+    }')
+
+    public function new()
+    {
+       super();
+    }
+}
+
+
 
 class DistortBGShader extends FlxShader
 {
@@ -201,57 +277,6 @@ class DistortBGShader extends FlxShader
     }
 }
 
-class PulseEffect extends Effect
-{
-    public var shader(default,null):PulseShader = new PulseShader();
-
-    public var waveSpeed(default, set):Float = 0;
-	public var waveFrequency(default, set):Float = 0;
-	public var waveAmplitude(default, set):Float = 0;
-    public var Enabled(default, set):Bool = false;
-
-	public function new():Void
-	{
-		shader.uTime.value = [0];
-        shader.uampmul.value = [0];
-        shader.uEnabled.value = [false];
-	}
-
-    public function update(elapsed:Float):Void
-    {
-        shader.uTime.value[0] += elapsed;
-    }
-
-
-    function set_waveSpeed(v:Float):Float
-    {
-        waveSpeed = v;
-        shader.uSpeed.value = [waveSpeed];
-        return v;
-    }
-
-    function set_Enabled(v:Bool):Bool
-    {
-        Enabled = v;
-        shader.uEnabled.value = [Enabled];
-        return v;
-    }
-    
-    function set_waveFrequency(v:Float):Float
-    {
-        waveFrequency = v;
-        shader.uFrequency.value = [waveFrequency];
-        return v;
-    }
-    
-    function set_waveAmplitude(v:Float):Float
-    {
-        waveAmplitude = v;
-        shader.uWaveAmplitude.value = [waveAmplitude];
-        return v;
-    }
-
-}
 
 class PulseShader extends FlxShader
 {
@@ -284,11 +309,11 @@ class PulseShader extends FlxShader
         if (uampmul > 0.0)
         {
             float offsetX = sin(pt.y * uFrequency + uTime * uSpeed);
-            float offsetY = sin(pt.x * (uFrequency * 2.0) - (uTime / 2.0) * uSpeed);
-            float offsetZ = sin(pt.z * (uFrequency / 2.0) + (uTime / 3.0) * uSpeed);
-            pt.x = mix(pt.x,sin(pt.x / 2.0 * pt.y + (5.0 * offsetX) * pt.z),uWaveAmplitude * uampmul);
-            pt.y = mix(pt.y,sin(pt.y / 3.0 * pt.z + (2.0 * offsetZ) - pt.x),uWaveAmplitude * uampmul);
-            pt.z = mix(pt.z,sin(pt.z / 6.0 * (pt.x * offsetY) - (50.0 * offsetZ) * (pt.z * offsetX)),uWaveAmplitude * uampmul);
+            float offsetY = sin(pt.x * (uFrequency * 2) - (uTime / 2) * uSpeed);
+            float offsetZ = sin(pt.z * (uFrequency / 2) + (uTime / 3) * uSpeed);
+            pt.x = mix(pt.x,sin(pt.x / 2 * pt.y + (5 * offsetX) * pt.z),uWaveAmplitude * uampmul);
+            pt.y = mix(pt.y,sin(pt.y / 3 * pt.z + (2 * offsetZ) - pt.x),uWaveAmplitude * uampmul);
+            pt.z = mix(pt.z,sin(pt.z / 6 * (pt.x * offsetY) - (50 * offsetZ) * (pt.z * offsetX)),uWaveAmplitude * uampmul);
         }
 
 
@@ -305,40 +330,4 @@ class PulseShader extends FlxShader
     {
        super();
     }
-} 
-
-class InvertColorsEffect extends Effect
-{
-    public var shader(default,null):InvertShader = new InvertShader();
-
-}
-
-class InvertShader extends FlxShader
-{
-    @:glFragmentSource('
-    #pragma header
-
-    vec4 sineWave(vec4 pt)
-    {
-        return vec4(1.0 - pt.x, 1.0 - pt.y, 1.0 - pt.z, pt.w);
-    }
-
-    void main()
-    {
-        vec2 uv = openfl_TextureCoordv;
-        gl_FragColor = sineWave(texture2D(bitmap, uv));
-    }')
-
-    public function new()
-    {
-       super();
-    }
-}
-
-//thx bbpanzu for this effect function
-class Effect {
-	public function setValue(shader:FlxShader, variable:String, value:Float){
-		Reflect.setProperty(Reflect.getProperty(shader, 'variable'), 'value', [value]);
-	}
-	
 }

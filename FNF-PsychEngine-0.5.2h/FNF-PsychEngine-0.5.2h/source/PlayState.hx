@@ -134,7 +134,7 @@ class PlayState extends MusicBeatState
 
 	private var strumLine:FlxSprite;
 
-	public var screenshader:Shaders.PulseEffect = new PulseEffect();
+	public static var screenshader:Shaders.PulseEffect = new PulseEffect();
 
 	//Handles the new epic mega sexy cam code that i've done
 	private var camFollow:FlxPoint;
@@ -453,7 +453,7 @@ class PlayState extends MusicBeatState
 				}
 
 				case 'weedy':
-					{
+				{
 					defaultCamZoom = 0.85;
 						curStage = 'weedy';
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('weedbg'));
@@ -471,8 +471,8 @@ class PlayState extends MusicBeatState
 					bg.shader = testshader.shader;
 					curbg = bg;
 					#end
-					}
-
+				}
+				
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
 					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
@@ -759,6 +759,7 @@ class PlayState extends MusicBeatState
         screenshader.waveSpeed = 1;
         screenshader.shader.uTime.value[0] = new flixel.math.FlxRandom().float(-100000, 100000);
 
+
 		// "GLOBAL" SCRIPTS
 		#if LUA_ALLOWED
 		var filesPushed:Array<String> = [];
@@ -822,6 +823,14 @@ class PlayState extends MusicBeatState
 		if(curStage == 'philly') insert(members.indexOf(blammedLightsBlack) + 1, phillyCityLightsEvent);
 		blammedLightsBlack = modchartSprites.get('blammedLightsBlack');
 		blammedLightsBlack.alpha = 0.0;
+
+		#if windows
+		screenshader.waveAmplitude = 1;
+        screenshader.waveFrequency = 2;
+        screenshader.waveSpeed = 1;
+        screenshader.shader.uTime.value[0] = new flixel.math.FlxRandom().float(-100000, 100000);
+		#end
+
 
 		var gfVersion:String = SONG.gfVersion;
 		if(gfVersion == null || gfVersion.length < 1) {
@@ -2211,6 +2220,18 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+
+		#if windows
+	if (curbg != null)
+	{
+		if (curbg.active) // only the furiosity background is active
+		{
+			var shad = cast(curbg.shader, Shaders.GlitchShader);
+			shad.uTime.value[0] += elapsed;
+		}
+	}
+	#end
+
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
@@ -2488,6 +2509,12 @@ class PlayState extends MusicBeatState
 			trace("RESET = True");
 		}
 		doDeathCheck();
+
+		if(curSong.toLowerCase() == 'fresh')
+			{
+				screenshader.shader.uampmul.value[0] = 0;
+				screenshader.Enabled = false;
+			}
 
 		if (unspawnNotes[0] != null)
 		{
