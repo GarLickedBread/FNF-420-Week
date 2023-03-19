@@ -8,6 +8,7 @@ import Section.SwagSection;
 import Song.SwagSong;
 import WiggleEffect.WiggleEffectType;
 import flixel.FlxBasic;
+import Shaders.PulseEffect;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxGame;
@@ -24,6 +25,7 @@ import flixel.addons.transition.FlxTransitionableState;
 import flixel.graphics.atlas.FlxAtlas;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.math.FlxRandom;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
@@ -112,6 +114,7 @@ class PlayState extends MusicBeatState
 	public var dadGroup:FlxSpriteGroup;
 	public var gfGroup:FlxSpriteGroup;
 	public static var curStage:String = '';
+	public var curbg:FlxSprite;
 	public static var isPixelStage:Bool = false;
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
@@ -130,6 +133,8 @@ class PlayState extends MusicBeatState
 	public var eventNotes:Array<EventNote> = [];
 
 	private var strumLine:FlxSprite;
+
+	public var screenshader:Shaders.PulseEffect = new PulseEffect();
 
 	//Handles the new epic mega sexy cam code that i've done
 	private var camFollow:FlxPoint;
@@ -447,6 +452,27 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 
+				case 'weedy':
+					{
+					defaultCamZoom = 0.85;
+						curStage = 'weedy';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('weedbg'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.6, 0.6);
+						bg.active = true;
+	
+						add(bg);
+					#if windows
+					// below code assumes shaders are always enabled which is bad
+					var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
+					testshader.waveAmplitude = 0.1;
+					testshader.waveFrequency = 5;
+					testshader.waveSpeed = 2;
+					bg.shader = testshader.shader;
+					curbg = bg;
+					#end
+					}
+
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
 					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
@@ -728,6 +754,10 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		screenshader.waveAmplitude = 1;
+        screenshader.waveFrequency = 2;
+        screenshader.waveSpeed = 1;
+        screenshader.shader.uTime.value[0] = new flixel.math.FlxRandom().float(-100000, 100000);
 
 		// "GLOBAL" SCRIPTS
 		#if LUA_ALLOWED
@@ -1158,16 +1188,15 @@ class PlayState extends MusicBeatState
 				case 'senpai' | 'roses' | 'thorns':
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
-
+					
 					//VIDEO INTRO SHIT
 					case 'bopeebo':
 						startVideo('LEAN');
-	
+						
 					case 'fresh':
 						startVideo('LEAN');
 					//End Of Video Intro Shit
-
-
+					
 				default:
 					startCountdown();
 			}
