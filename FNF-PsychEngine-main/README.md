@@ -4,35 +4,26 @@ Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
 
-open up a Command Prompt/PowerShell or Terminal, type `haxelib install hmm`
+Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
 
-after it finishes, simply type `haxelib run hmm install` in order to install all the needed libraries for *Psych Engine!*
+To install LuaJIT do this: `haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit ` on a Command prompt/PowerShell
 
-## Customization:
-
-if you wish to disable things like *Lua Scripts* or *Video Cutscenes*, you can read over to `Project.xml`
-
-inside `Project.xml`, you will find several variables to customize Psych Engine to your liking
-
-to start you off, disabling Videos should be simple, simply Delete the line `"VIDEOS_ALLOWED"` or comment it out by wrapping the line in XML-like comments, like this `<!-- YOUR_LINE_HERE -->`
-
-same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, this and other customization options are all available within the `Project.xml` file
+...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
 
 ## Credits:
-* Shadow Mario - Programmer
-* RiverOaken - Artist
-* Yoshubs - Assistant Programmer
+* Shadow Mario - Coding
+* RiverOaken - Arts and Animations
+* bbpanzu - Assistant Coding
 
 ### Special Thanks
-* bbpanzu - Ex-Programmer
-* Yoshubs - New Input System
-* SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
-* KadeDev - Fixed some cool stuff on Chart Editor and other PRs
-* iFlicky - Composer of Psync and Tea Time, also made the Dialogue Sounds
-* PolybiusProxy - .MP4 Video Loader Library (hxCodec)
+* shubs - New Input System
+* SqirraRNG - Chart Editor's Sound Waveform base code
+* iFlicky - Delay/Combo Menu Song Composer + Dialogue Sounds
+* PolybiusProxy - .MP4 Loader Extension
 * Keoiki - Note Splash Animations
-* Smokey - Sprite Atlas Support
-* Nebula the Zorua - LUA JIT Fork and some Lua reworks
+* Smokey - Spritemap Texture Atlas support
+* Cary - OG Resolution code
+* Nebula_Zorua - VCR Shader code
 _____________________________________
 
 # Features
@@ -44,12 +35,12 @@ _____________________________________
 
 ## Mod Support
 * Probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
-* Comes with a Mod Organizing/Disabling Menu.
+* Comes with a Mod Organizing/Disabling Menu. 
 
 
 ## Atleast one change to every week:
 ### Week 1:
-  * New Dad Left sing sprite
+  * New Dad Left sing sprite 
   * Unused stage lights are now used
 ### Week 2:
   * Both BF and Skid & Pump does "Hey!" animations
