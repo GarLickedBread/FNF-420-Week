@@ -1159,6 +1159,15 @@ class PlayState extends MusicBeatState
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 
+					//VIDEO INTRO SHIT
+					case 'bopeebo':
+						startVideo('LEAN');
+	
+					case 'fresh':
+						startVideo('LEAN');
+					//End Of Video Intro Shit
+
+
 				default:
 					startCountdown();
 			}
