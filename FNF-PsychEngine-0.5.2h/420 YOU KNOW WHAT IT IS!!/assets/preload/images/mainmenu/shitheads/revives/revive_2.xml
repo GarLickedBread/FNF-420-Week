@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="revive_2.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="revive A basic 0000" x="3" y="3" width="626" height="635"/>
+	<SubTexture name="revive A basic 0001" x="3" y="3" width="626" height="635"/>
+	<SubTexture name="revive A basic 0002" x="634" y="3" width="626" height="635"/>
+	<SubTexture name="revive A basic 0003" x="634" y="3" width="626" height="635"/>
+	<SubTexture name="revive A basic 0004" x="1265" y="3" width="626" height="635"/>
+	<SubTexture name="revive A basic 0005" x="1265" y="3" width="626" height="635"/>
+	<SubTexture name="revive A basic 0006" x="3" y="643" width="626" height="635"/>
+	<SubTexture name="revive A basic 0007" x="3" y="643" width="626" height="635"/>
+	<SubTexture name="revive A basic 0008" x="634" y="643" width="626" height="635"/>
+	<SubTexture name="revive A basic 0009" x="634" y="643" width="626" height="635"/>
+	<SubTexture name="revive A basic 0010" x="1265" y="643" width="626" height="635"/>
+	<SubTexture name="revive A basic 0011" x="1265" y="643" width="626" height="635"/>
+	<SubTexture name="revive A basic 0012" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive A basic 0013" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive A basic 0014" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive A basic 0015" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive A basic 0016" x="1265" y="1283" width="626" height="635"/>
+	<SubTexture name="revive A basic 0017" x="1265" y="1283" width="626" height="635"/>
+	<SubTexture name="revive A basic 0018" x="3" y="1923" width="626" height="635"/>
+	<SubTexture name="revive A basic 0019" x="3" y="1923" width="626" height="635"/>
+	<SubTexture name="revive A basic 0020" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0021" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0022" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0023" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0024" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0025" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0026" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0027" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0028" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0029" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0030" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0031" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0032" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0033" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0034" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0035" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0036" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0037" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0038" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0039" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0040" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0041" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0042" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive A basic 0043" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0000" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0001" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0002" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0003" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0004" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0005" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0006" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0007" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0008" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0009" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0010" x="1265" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic0011" x="3" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0012" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0013" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0014" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0015" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0016" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0017" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0018" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0019" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0020" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0021" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0022" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0023" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0024" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0025" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0026" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0027" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0028" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0029" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0030" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0031" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0032" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0033" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0034" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0035" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0036" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0037" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0038" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0039" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0040" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0041" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0042" x="634" y="2563" width="626" height="635"/>
+	<SubTexture name="revive wait basic0043" x="634" y="2563" width="626" height="635"/>
+</TextureAtlas>

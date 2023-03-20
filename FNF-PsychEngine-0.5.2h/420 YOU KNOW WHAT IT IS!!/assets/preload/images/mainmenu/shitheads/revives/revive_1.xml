@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="revive_1.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="revive basic instance 10000" x="3" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10001" x="634" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10002" x="1265" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10003" x="3" y="643" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10004" x="3" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10005" x="634" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10006" x="1265" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10007" x="3" y="643" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10008" x="3" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10009" x="634" y="3" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10010" x="634" y="643" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10011" x="1265" y="643" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10012" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10013" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10014" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10015" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10016" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10017" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10018" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10019" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10020" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10021" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10022" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10023" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10024" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10025" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10026" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10027" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10028" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10029" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10030" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10031" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10032" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10033" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10034" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10035" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10036" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10037" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10038" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10039" x="3" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10040" x="634" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10041" x="1265" y="1283" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10042" x="3" y="1923" width="626" height="635"/>
+	<SubTexture name="revive basic instance 10043" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10000" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10001" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10002" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10003" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10004" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10005" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10006" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10007" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10008" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10009" x="1265" y="1923" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10010" x="3" y="2563" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10011" x="635" y="2563" width="627" height="635"/>
+	<SubTexture name="revive wait basic instance 10012" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10013" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10014" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10015" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10016" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10017" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10018" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10019" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10020" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10021" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10022" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10023" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10024" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10025" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10026" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10027" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10028" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10029" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10030" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10031" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10032" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10033" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10034" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10035" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10036" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10037" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10038" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10039" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10040" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10041" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10042" x="634" y="1923" width="626" height="635"/>
+	<SubTexture name="revive wait basic instance 10043" x="634" y="1923" width="626" height="635"/>
+</TextureAtlas>

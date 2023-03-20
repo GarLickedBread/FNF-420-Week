@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_anvil.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="anvil basic instance 10000" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10001" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10002" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10003" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10004" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10005" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10006" x="3" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10007" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10008" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10009" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10010" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10011" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10012" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil basic instance 10013" x="392" y="3" width="384" height="537"/>
+	<SubTexture name="anvil die basic instance 10000" x="781" y="3" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10001" x="781" y="3" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10002" x="781" y="3" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10003" x="781" y="3" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10004" x="1170" y="3" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10005" x="1559" y="3" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10006" x="3" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10007" x="392" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10008" x="781" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10009" x="1170" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10010" x="392" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10011" x="781" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10012" x="1170" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10013" x="392" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10014" x="781" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10015" x="1170" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10016" x="392" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10017" x="781" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10018" x="1559" y="545" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10019" x="3" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10020" x="392" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10021" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10022" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10023" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10024" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10025" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10026" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10027" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10028" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10029" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10030" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10031" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10032" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10033" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10034" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10035" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10036" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10037" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10038" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10039" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10040" x="781" y="1070" width="384" height="520"/>
+	<SubTexture name="anvil die basic instance 10041" x="781" y="1070" width="384" height="520"/>
+</TextureAtlas>
