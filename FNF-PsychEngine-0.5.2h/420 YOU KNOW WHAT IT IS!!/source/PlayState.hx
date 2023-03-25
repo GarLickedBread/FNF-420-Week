@@ -2446,7 +2446,7 @@ class PlayState extends MusicBeatState
 
 		if (healthBar.percent > 75)
 			iconP2.animation.curAnim.curFrame = 1;
-		else if (healthBar.percent < 45)
+		else if (healthBar.percent < 40)
 			iconP2.animation.curAnim.curFrame = 2;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
@@ -4354,14 +4354,14 @@ class PlayState extends MusicBeatState
 			 iconP1.scale.set(1.1, 0.8);
 			 iconP2.scale.set(1.1, 1.3);
 		 
-			 FlxTween.angle(iconP1, -15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
-			 FlxTween.angle(iconP2, 15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+			 FlxTween.angle(iconP1, SONG.bpm * -0.09, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+			 FlxTween.angle(iconP2, SONG.bpm * 0.09, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
 			} : {
 			 iconP1.scale.set(1.1, 1.3);
 			 iconP2.scale.set(1.1, 0.8);
 		 
-			 FlxTween.angle(iconP2, -15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
-			 FlxTween.angle(iconP1, 15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+			 FlxTween.angle(iconP2, SONG.bpm * -0.09, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+			 FlxTween.angle(iconP1, SONG.bpm * 0.09, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
 			}
 		 
 			FlxTween.tween(iconP1, {'scale.x': 1, 'scale.y': 1}, Conductor.crochet / 1250 * gfSpeed, {ease: FlxEase.quadOut});

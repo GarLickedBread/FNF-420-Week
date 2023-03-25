@@ -67,6 +67,8 @@ class TitleState extends MusicBeatState
 
 	var wackyImage:FlxSprite;
 
+	var canPressEnter:Bool = false;
+	
 	#if TITLE_SCREEN_EASTER_EGG
 	var easterEggKeys:Array<String> = [
 		'SHADOW', 'RIVER', 'SHUBS', 'BBPANZU'
@@ -207,7 +209,14 @@ class TitleState extends MusicBeatState
 
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-				startIntro();
+				if (initialized)
+					{
+						startIntro();
+					}
+					else
+					{
+						startVideo('LEAN');
+					}
 			});
 		}
 		#end
@@ -640,81 +649,101 @@ class TitleState extends MusicBeatState
 
 	var skippedIntro:Bool = false;
 	var increaseVolume:Bool = false;
+
 	function skipIntro():Void
-	{
-		if (!skippedIntro)
 		{
-			if (playJingle) //Ignore deez
-			{
-				var easteregg:String = FlxG.save.data.psychDevsEasterEgg;
-				if (easteregg == null) easteregg = '';
-				easteregg = easteregg.toUpperCase();
-
-				var sound:FlxSound = null;
-				switch(easteregg)
-				{
-					case 'RIVER':
-						sound = FlxG.sound.play(Paths.sound('JingleRiver'));
-					case 'SHUBS':
-						sound = FlxG.sound.play(Paths.sound('JingleShubs'));
-					case 'SHADOW':
-						FlxG.sound.play(Paths.sound('JingleShadow'));
-					case 'BBPANZU':
-						sound = FlxG.sound.play(Paths.sound('JingleBB'));
-					
-					default: //Go back to normal ugly ass boring GF
-						remove(ngSpr);
-						remove(credGroup);
-						FlxG.camera.flash(FlxColor.WHITE, 2);
-						skippedIntro = true;
-						playJingle = false;
-						
-						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-						FlxG.sound.music.fadeIn(4, 0, 0.7);
-						return;
-				}
-
-				transitioning = true;
-				if(easteregg == 'SHADOW')
-				{
-					new FlxTimer().start(3.2, function(tmr:FlxTimer)
-					{
-						remove(ngSpr);
-						remove(credGroup);
-						FlxG.camera.flash(FlxColor.WHITE, 0.6);
-						transitioning = false;
-					});
-				}
-				else
-				{
-					remove(ngSpr);
-					remove(credGroup);
-					FlxG.camera.flash(FlxColor.WHITE, 3);
-					sound.onComplete = function() {
-						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-						FlxG.sound.music.fadeIn(4, 0, 0.7);
-						transitioning = false;
-					};
-				}
-				playJingle = false;
-			}
-			else //Default! Edit this one!!
+			if (!skippedIntro)
 			{
 				remove(ngSpr);
 				remove(credGroup);
 				FlxG.camera.flash(FlxColor.WHITE, 4);
-
-				var easteregg:String = FlxG.save.data.psychDevsEasterEgg;
-				if (easteregg == null) easteregg = '';
-				easteregg = easteregg.toUpperCase();
-				#if TITLE_SCREEN_EASTER_EGG
-				if(easteregg == 'SHADOW')
-				{
-					FlxG.sound.music.fadeOut();
-				}
-				#end
+				skippedIntro = true;
 			}
-			skippedIntro = true;
 		}
+	
+	public function startVideo(name:String):Void
+		{
+		#if VIDEOS_ALLOWED
+		var foundFile:Bool = false;
+		var fileName:String = #if MODS_ALLOWED Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
+		#if sys
+		if (FileSystem.exists(fileName))
+		{
+			foundFile = true;
+		}
+		#end
+	
+		if (!foundFile)
+		{
+			fileName = Paths.video(name);
+			#if sys
+			if (FileSystem.exists(fileName))
+			{
+			#else
+			if (OpenFlAssets.exists(fileName))
+			{
+			#end
+				foundFile = true;
+			}
+			} if (foundFile)
+			{
+				var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+				bg.scrollFactor.set();
+				add(bg);
+	
+				FlxG.autoPause = false;
+				(new FlxVideo(fileName)).finishCallback = function()
+				{
+					canPressEnter = true;
+					startIntro();
+					
+					FlxG.autoPause = true;
+				}
+				return;
+			}
+			else
+			{
+				FlxG.log.warn('Couldnt find video file: ' + fileName);
+			}
+			#end
+		}
+	
 	}
-}
+// 	function skipIntro():Void
+// 	{
+// 		if (!skippedIntro)
+// 		{
+// 			
+
+// 				transitioning = true;
+// 					remove(ngSpr);
+// 					remove(credGroup);
+// 					FlxG.camera.flash(FlxColor.WHITE, 3);
+// 					sound.onComplete = function() {
+// 						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+// 						FlxG.sound.music.fadeIn(4, 0, 0.7);
+// 						transitioning = false;
+// 					};
+// 				}
+// 				playJingle = false;
+// 			}
+// 			else //Default! Edit this one!!
+// 			{
+// 				remove(ngSpr);
+// 				remove(credGroup);
+// 				FlxG.camera.flash(FlxColor.WHITE, 4);
+
+// 				var easteregg:String = FlxG.save.data.psychDevsEasterEgg;
+// 				if (easteregg == null) easteregg = '';
+// 				easteregg = easteregg.toUpperCase();
+// 				#if TITLE_SCREEN_EASTER_EGG
+// 				if(easteregg == 'SHADOW')
+// 				{
+// 					FlxG.sound.music.fadeOut();
+// 				}
+// 				#end
+// 			}
+// 			skippedIntro = true;
+// 		}
+// 	}
+// }
