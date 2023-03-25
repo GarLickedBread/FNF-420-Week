@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dewdrop.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bdrop instance 10000" x="3" y="3" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10001" x="3" y="3" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10002" x="3" y="465" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10003" x="3" y="465" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10004" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10005" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10006" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10007" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10008" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10009" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10010" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10011" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10012" x="3" y="927" width="1048" height="457"/>
+	<SubTexture name="bdrop instance 10013" x="3" y="927" width="1048" height="457"/>
+</TextureAtlas>
