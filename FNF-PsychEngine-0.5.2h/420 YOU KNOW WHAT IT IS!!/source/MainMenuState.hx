@@ -356,7 +356,7 @@ class MainMenuState extends MusicBeatState
 			testButton.screenCenter(X);
 			testButton.scrollFactor.set();
 			
-			// brian was here
+			
 
 			//hi
 			switch(i) {
@@ -375,8 +375,8 @@ class MainMenuState extends MusicBeatState
 					// testButton.x = char.x + xoffy;
 					// testButton.y = char.y + yoffy;
 					//testButton.offset.set(xoffy, yoffy);
-				case 5:
-					testButton.setPosition(630, 640);
+				case 5: //BITCH BUTTON!
+					testButton.setPosition(99999, 99999);
 
 			}
 			menuItems.add(testButton);
@@ -488,7 +488,7 @@ class MainMenuState extends MusicBeatState
 											case 2:
 											FlxG.sound.play(Paths.sound('introGo-pixel'));		
 									}
-									char.animation.play('death');//you can rename the anim however you want to	
+									char.animation.play('death');
 									charGF.animation.play('scared');		
 									//FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 									new FlxTimer().start(2.3, function(tmr:FlxTimer)
@@ -689,19 +689,20 @@ class MainMenuState extends MusicBeatState
 		// 				});
 		// 			}
 		// 		}
-		// 		#if desktop
-		// 		else if (FlxG.keys.anyJustPressed(debugKeys))
-		// 		{
-		// 			selectedSomethin = true;
-		// 			MusicBeatState.switchState(new MasterEditorMenu());
-		// 		}
-		// 		#end
+		//THIS SHIT FOR DEBUG!! DISABLE PLEASE FAGGOT
+			#if desktop
+				else if (FlxG.keys.anyJustPressed(debugKeys))
+				{
+					selectedSomethin = true;
+					MusicBeatState.switchState(new MasterEditorMenu());
+				}
+				#end
 			}
 
 		#if windows
 		if (curbg != null)
 		{
-			if (curbg.active) // only the furiosity background is active
+			if (curbg.active)
 				
 			{	
 				if(ClientPrefs.flashing)
@@ -729,10 +730,7 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 
-		menuItems.forEach(function(spr:FlxSprite)
-		{
-			//spr.screenCenter(X);
-		});
+
 	}
 
 	function selectSomething()
@@ -784,7 +782,7 @@ class MainMenuState extends MusicBeatState
 					trace("Options Menu Selected");
 				case 'credits':
 					FlxG.switchState(new CreditsState());
-					trace("Gallery Menu Selected");
+					trace("Credits Menu Selected");
 			}		
 		}
 

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="process.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="render0000" x="3" y="3" width="631" height="745"/>
+	<SubTexture name="render0001" x="3" y="753" width="631" height="745"/>
+</TextureAtlas>

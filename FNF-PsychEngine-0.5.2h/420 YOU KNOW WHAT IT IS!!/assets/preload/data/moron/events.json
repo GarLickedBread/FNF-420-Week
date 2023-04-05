@@ -1,0 +1,189 @@
+{
+	"song": {
+		"speed": 2.9,
+		"stage": "fuckyou",
+		"player1": "bf",
+		"player2": "dad",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Cam lock",
+						"in",
+						"sex"
+					]
+				]
+			],
+			[
+				166.666666666667,
+				[
+					[
+						"Cam lock",
+						"in",
+						"dad"
+					]
+				]
+			],
+			[
+				333.333333333333,
+				[
+					[
+						"Cam lock",
+						"",
+						""
+					]
+				]
+			],
+			[
+				2666.66666666667,
+				[
+					[
+						"Cam lock",
+						"in",
+						"dad"
+					]
+				]
+			],
+			[
+				4000,
+				[
+					[
+						"Cam lock",
+						"in",
+						"bf"
+					]
+				]
+			],
+			[
+				6250,
+				[
+					[
+						"Cam lock",
+						"in",
+						"dad"
+					]
+				]
+			],
+			[
+				10666.6666666667,
+				[
+					[
+						"Cam lock",
+						"in",
+						"bf"
+					]
+				]
+			],
+			[
+				16000,
+				[
+					[
+						"Cam lock",
+						"in",
+						"dad"
+					]
+				]
+			],
+			[
+				21333.3333333333,
+				[
+					[
+						"Cam lock",
+						"",
+						""
+					]
+				]
+			],
+			[
+				22666.6666666667,
+				[
+					[
+						"Cam lock",
+						"",
+						""
+					]
+				]
+			],
+			[
+				28000,
+				[
+					[
+						"Cam lock",
+						"",
+						""
+					]
+				]
+			],
+			[
+				32000,
+				[
+					[
+						"Cam lock",
+						"",
+						""
+					]
+				]
+			],
+			[
+				32833.3333333333,
+				[
+					[
+						"Change Scroll Speed",
+						".8",
+						""
+					]
+				]
+			],
+			[
+				34750,
+				[
+					[
+						"Change Scroll Speed",
+						".8",
+						""
+					]
+				]
+			],
+			[
+				36083.3333333333,
+				[
+					[
+						"Change Scroll Speed",
+						".8",
+						""
+					]
+				]
+			],
+			[
+				37500,
+				[
+					[
+						"Change Scroll Speed",
+						".8",
+						""
+					]
+				]
+			],
+			[
+				42666.6666666667,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						".1"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 180,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "moron"
+	}
+}

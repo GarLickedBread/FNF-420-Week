@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="aura.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Fire 0000" x="3" y="3" width="441" height="459"/>
+	<SubTexture name="Fire 0001" x="449" y="3" width="441" height="459"/>
+	<SubTexture name="Fire 0002" x="3" y="467" width="441" height="459"/>
+	<SubTexture name="Fire 0003" x="449" y="467" width="441" height="459"/>
+</TextureAtlas>

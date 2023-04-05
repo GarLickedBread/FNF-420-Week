@@ -1,0 +1,90 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				6,
+				25
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Wd_Idle"
+		},
+		{
+			"offsets": [
+				16,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Wd_Left"
+		},
+		{
+			"offsets": [
+				-6,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Wd_Right"
+		},
+		{
+			"offsets": [
+				17,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Wd_Down"
+		},
+		{
+			"offsets": [
+				18,
+				62
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Wd_Up"
+		},
+		{
+			"offsets": [
+				89,
+				-48
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "Wd_Hey!"
+		}
+
+	],
+	"no_antialiasing": false,
+	"image": "characters/weedBf",
+	"position": [
+		150,
+		360
+	],
+	"healthicon": "dad",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		182,
+		11
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6,
+	"scale": 1
+}

@@ -113,6 +113,7 @@ class ControlsSubState extends MusicBeatSubstate {
 	}
 
 	var leaving:Bool = false;
+
 	var bindingTime:Float = 0;
 	override function update(elapsed:Float) {
 		if(!rebindingKey) {
