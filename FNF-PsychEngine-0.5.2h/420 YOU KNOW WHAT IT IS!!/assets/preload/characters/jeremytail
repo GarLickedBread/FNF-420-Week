@@ -1,0 +1,45 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				70,
+				350
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				81,
+				365
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "look",
+			"loop": false,
+			"name": "nike kicks"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/JeremyTrailer",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

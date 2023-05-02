@@ -273,19 +273,7 @@ class FreeplayState extends MusicBeatState
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
 		}
-		#if windows
-		if (curbg != null)
-		{
-			if (curbg.active) // only the furiosity background is active
-				
-			{	
-				if(ClientPrefs.flashing)
-				{				var shad = cast(curbg.shader, Shaders.GlitchShader);
-						shad.uTime.value[0] += elapsed;
-				}
-			}
-		}
-		#end
+
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 24, 0, 1)));
 		lerpRating = FlxMath.lerp(lerpRating, intendedRating, CoolUtil.boundTo(elapsed * 12, 0, 1));
 
@@ -430,6 +418,20 @@ class FreeplayState extends MusicBeatState
 			openSubState(new ResetScoreSubState(songs[curSelected].songName, curDifficulty, songs[curSelected].songCharacter));
 			FlxG.sound.play(Paths.sound('scrollMenu'));
 		}
+
+		#if windows
+		if (curbg != null)
+		{
+			if (curbg.active) // only the furiosity background is active
+				
+			{	
+				if(ClientPrefs.flashing)
+				{				var shad = cast(curbg.shader, Shaders.GlitchShader);
+						shad.uTime.value[0] += elapsed;
+				}
+			}
+		}
+		#end
 		super.update(elapsed);
 	}
 

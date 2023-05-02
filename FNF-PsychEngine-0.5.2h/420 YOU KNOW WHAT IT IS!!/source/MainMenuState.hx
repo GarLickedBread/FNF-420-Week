@@ -746,7 +746,7 @@ class MainMenuState extends MusicBeatState
 				{
 					if (curSelected != spr.ID)
 					{
-						FlxG.camera.fade(FlxColor.BLACK, 0.7, false);
+						FlxG.camera.fade(0x032F0B, 0.7, false);
 						FlxTween.tween(spr, {alpha: 0}, 1.3, {
 							ease: FlxEase.quadOut,
 							onComplete: function(twn:FlxTween)
@@ -757,7 +757,7 @@ class MainMenuState extends MusicBeatState
 					}
 					else
 					{
-						FlxG.camera.fade(FlxColor.BLACK, 0.7, false);
+						FlxG.camera.fade(0x032F0B, 0.7, false);
 						 new FlxTimer().start(1, function(tmr:FlxTimer)
 						 	{
 						 		goToState();
