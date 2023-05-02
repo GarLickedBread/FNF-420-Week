@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gfTest.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gftest0000" x="3" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0001" x="3" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0002" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0003" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0004" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0005" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0006" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0007" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0008" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0009" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0010" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0011" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0012" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0013" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0014" x="3" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0015" x="3" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0016" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0017" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0018" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0019" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0020" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0021" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0022" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0023" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0024" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0025" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0026" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0027" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0028" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest0029" x="511" y="3" width="503" height="319"/>
+	<SubTexture name="gftest alt0000" x="3" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0001" x="3" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0002" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0003" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0004" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0005" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0006" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0007" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0008" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0009" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0010" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0011" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0012" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0013" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0014" x="3" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0015" x="3" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0016" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0017" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0018" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0019" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0020" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0021" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0022" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0023" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0024" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0025" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0026" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0027" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0028" x="511" y="327" width="503" height="319"/>
+	<SubTexture name="gftest alt0029" x="511" y="327" width="503" height="319"/>
+</TextureAtlas>

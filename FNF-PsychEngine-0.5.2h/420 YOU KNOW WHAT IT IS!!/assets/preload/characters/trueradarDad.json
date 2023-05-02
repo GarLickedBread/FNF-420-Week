@@ -1,0 +1,92 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-441,
+				-86
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "dad_idle"
+		},
+		{
+			"offsets": [
+				-441,
+				-86
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [
+				9,
+				10
+			],
+			"name": "dad_idle"
+		},
+		{
+			"offsets": [
+				-305,
+				-85
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "dad_left"
+		},
+		{
+			"offsets": [
+				-423,
+				-106
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "dad_down"
+		},
+		{
+			"offsets": [
+				-448,
+				-74
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "dad_right"
+		},
+		{
+			"offsets": [
+				-442,
+				-69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "dad_up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sexDad",
+	"position": [
+		170,
+		100
+	],
+	"healthicon": "dad",
+	"flip_x": false,
+	"healthbar_colors": [
+		11,
+		182,
+		51
+	],
+	"camera_position": [
+		50,
+		-200
+	],
+	"sing_duration": 7,
+	"scale": 1.6
+}

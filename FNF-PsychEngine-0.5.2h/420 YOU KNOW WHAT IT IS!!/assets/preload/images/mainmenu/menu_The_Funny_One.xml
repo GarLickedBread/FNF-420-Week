@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_The_Funny_One.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="The_Funny_One basic0000" x="3" y="3" width="453" height="453"/>
+	<SubTexture name="The_Funny_One white0000" x="3" y="461" width="453" height="453"/>
+</TextureAtlas>
