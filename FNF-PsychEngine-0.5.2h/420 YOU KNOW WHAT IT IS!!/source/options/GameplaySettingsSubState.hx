@@ -34,65 +34,6 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		title = 'Gameplay Settings';
 		rpcTitle = 'Gameplay Settings Menu'; //for Discord Rich Presence
 
-		var option:Option = new Option('Aura Mechanic', //Name
-		'Default: Aura will be on except for specific songs\n On: Aura will be on for ALL songs (may cause problems on certain songs)\n 
-		Off: Aura will be off for ALL songs', //Description
-		'auraMech',
-		'string',
-		'Default',
-		['Off', 'Default', 'On']);
-	addOption(option);
-
-		var option:Option = new Option('Aura scroll multiplier', //Name
-		'When getting an aura the scrollspeed gets multiplied by this number!', //Description
-		'auraScroll', //Save data variable name
-		'float', //Variable type
-		1.2);
-
-		addOption(option);
-		option.scrollSpeed = 1.6;
-		option.minValue = 1.1;
-		option.maxValue = 9999;
-		option.changeValue = 0.1;
-		option.decimals = 1;
-
-		var option:Option = new Option('Radar Mechanic', //Name
-		'Default: Radar will be on except for specific songs\n On: Radar will be on for ALL songs\n 
-		Off: Radar will be off for ALL songs', //Description
-		'radarMech', //Save data variable name
-		'string', //Variable type
-		'Default', //Default value
-		['Off', 'Default', 'On']);
-	addOption(option);
-
-
-
-		var option:Option = new Option('Aura Volume',
-		'Change the volume of the "Get!" and "Lose.." sounds when \ngaining/losing an aura.',
-		'auraVolume',
-		'float',
-		0.7);
-	
-		addOption(option);
-		option.scrollSpeed = 1.6;
-		option.minValue = 0.0;
-		option.maxValue = 1;
-		option.changeValue = 0.1;
-		option.decimals = 1;
-
-		var option:Option = new Option('Radar Volume',
-		'Change the volume of the radar sounds',
-		'radarVolume',
-		'float',
-		1);
-	
-		addOption(option);
-		option.scrollSpeed = 1.6;
-		option.minValue = 0.0;
-		option.maxValue = 1;
-		option.changeValue = 0.1;
-		option.decimals = 1;
-
 		var option:Option = new Option('Controller Mode',
 			'Check this if you want to play with\na controller instead of using your Keyboard.',
 			'controllerMode',
@@ -140,9 +81,6 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 1;
 		option.changeValue = 0.1;
 		option.decimals = 1;
-
-		
-
 
 		var option:Option = new Option('Rating Offset',
 			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',

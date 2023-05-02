@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="fucklaser.png">
-	<!-- Created with Adobe Animate version 19.0.0.326 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="fuck0000" x="3" y="3" width="1587" height="1646"/>
-	<SubTexture name="fuck0001" x="1595" y="3" width="1587" height="1646"/>
-	<SubTexture name="fuck0002" x="3" y="1654" width="1587" height="1646"/>
-</TextureAtlas>

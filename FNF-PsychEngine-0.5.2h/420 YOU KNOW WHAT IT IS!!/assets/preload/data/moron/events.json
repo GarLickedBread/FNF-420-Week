@@ -11,18 +11,28 @@
 				[
 					[
 						"Cam lock",
-						"",
-						""
+						"in",
+						"sex"
 					]
 				]
 			],
 			[
-				83.3333333333333,
+				166.666666666667,
 				[
 					[
-						"Aura mult",
-						"0",
-						"bye"
+						"Cam lock",
+						"in",
+						"dad"
+					]
+				]
+			],
+			[
+				333.333333333333,
+				[
+					[
+						"Cam lock",
+						"",
+						""
 					]
 				]
 			],
@@ -127,72 +137,32 @@
 				]
 			],
 			[
-				32916.6666666667,
-				[
-					[
-						"Aura mult",
-						"0 ",
-						"bye"
-					]
-				]
-			],
-			[
-				37666.6666666667,
-				[
-					[
-						"Cam lock",
-						"in",
-						"dad"
-					]
-				]
-			],
-			[
-				37750,
-				[
-					[
-						"HUD Fade",
-						"1",
-						"1"
-					]
-				]
-			],
-			[
-				38666.6666666667,
+				34750,
 				[
 					[
 						"Change Scroll Speed",
-						"1",
-						"-1"
-					]
-				]
-			],
-			[
-				39666.6666666667,
-				[
-					[
-						"Cam lock",
-						"",
+						".8",
 						""
 					]
 				]
 			],
 			[
-				40000,
+				36083.3333333333,
 				[
 					[
-						"Cam lock",
-						"in",
-						"dad"
+						"Change Scroll Speed",
+						".8",
+						""
 					]
 				]
 			],
 			[
-				40083.3333333333,
+				37500,
 				[
 					[
-						"HUD Fade",
-						"0",
-						"0.5"
+						"Change Scroll Speed",
+						".8",
+						""
 					]
 				]
 			],
@@ -200,169 +170,9 @@
 				42666.6666666667,
 				[
 					[
-						"Cam lock",
-						"",
-						""
-					]
-				]
-			],
-			[
-				81333.3333333333,
-				[
-					[
-						"DAD WINDOW",
-						"go",
-						""
-					]
-				]
-			],
-			[
-				81333.3333333333,
-				[
-					[
-						"Aura mult",
-						"1.2",
-						"hi"
-					]
-				]
-			],
-			[
-				85333.3333333333,
-				[
-					[
-						"Cam lock",
-						"in",
-						"bf"
-					]
-				]
-			],
-			[
-				129666.666666666,
-				[
-					[
-						"Renderproc cutscene",
-						"start",
-						""
-					]
-				]
-			],
-			[
-				129693.75,
-				[
-					[
-						"DAD WINDOW",
-						"close",
-						""
-					]
-				]
-			],
-			[
-				131333.333333333,
-				[
-					[
-						"Renderproc cutscene",
-						"start3",
-						""
-					]
-				]
-			],
-			[
-				132500,
-				[
-					[
-						"Cam lock",
-						"",
-						""
-					]
-				]
-			],
-			[
-				133000,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"enter"
-					]
-				]
-			],
-			[
-				134416.666666667,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"idle"
-					]
-				]
-			],
-			[
-				134833.333333333,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"talk"
-					]
-				]
-			],
-			[
-				136166.666666667,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"idle"
-					]
-				]
-			],
-			[
-				136797.916666667,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"talk"
-					]
-				]
-			],
-			[
-				138358.333333333,
-				[
-					[
-						"Cam lock",
-						"in",
-						"nobod"
-					]
-				]
-			],
-			[
-				139916.666666667,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"idle"
-					]
-				]
-			],
-			[
-				141666.666666667,
-				[
-					[
-						"Cam lock",
-						"in",
-						"nobod"
-					]
-				]
-			],
-			[
-				142083.333333333,
-				[
-					[
-						"Renderproc cutscene",
-						"",
-						"blep"
+						"Change Scroll Speed",
+						"1",
+						".1"
 					]
 				]
 			]
@@ -370,7 +180,7 @@
 		"notes": [],
 		"splashSkin": null,
 		"validScore": false,
-		"gfVersion": "weedGf",
+		"gfVersion": "gf",
 		"bpm": 180,
 		"arrowSkin": null,
 		"needsVoices": true,

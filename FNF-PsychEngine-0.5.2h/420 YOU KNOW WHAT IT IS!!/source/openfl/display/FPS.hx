@@ -46,7 +46,7 @@ class FPS extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/vcr.ttf").fontName, 16, color);
+		defaultTextFormat = new TextFormat("_sans", 14, color);
 		autoSize = LEFT;
 		multiline = true;
 		text = "FPS: ";
@@ -82,19 +82,18 @@ class FPS extends TextField
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
-			text = "FPS * 3 Million: " + currentFPS * 3 + '000000';
+			text = "FPS: " + currentFPS;
 			var memoryMegas:Float = 0;
 			
 			#if openfl
 			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
-			text += "\nMemory hohoh: " + memoryMegas + " MB";
+			text += "\nMemory: " + memoryMegas + " MB";
 			#end
 
-			textColor = 0xB8118904;
+			textColor = 0xFFFFFFFF;
 			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.framerate / 2)
 			{
-				text = "Low FPS!: " + currentFPS;
-				textColor = 0xFFFF6F01;
+				textColor = 0xFFFF0000;
 			}
 
 			#if (gl_stats && !disable_cffi && (!html5 || !canvas))

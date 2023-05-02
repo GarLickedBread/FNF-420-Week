@@ -1,13 +1,10 @@
 package;
 
-import flixel.util.FlxSave;
 import flixel.FlxG;
 import openfl.utils.Assets;
 import lime.utils.Assets as LimeAssets;
 import lime.utils.AssetLibrary;
 import lime.utils.AssetManifest;
-import flixel.system.FlxSound;
-import flixel.math.FlxMath;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
@@ -20,21 +17,14 @@ using StringTools;
 class CoolUtil
 {
 	public static var defaultDifficulties:Array<String> = [
-
+		'Easy',
 		'Normal',
-		'Mirrored'
+		'Hard'
 	];
 	public static var defaultDifficulty:String = 'Normal'; //The chart that has no suffix and starting difficulty on Freeplay/Story Mode
 
 	public static var difficulties:Array<String> = [];
 
-	inline public static function quantize(f:Float, snap:Float){
-		// changed so this actually works lol
-		var m:Float = Math.fround(f * snap);
-		trace(snap);
-		return (m / snap);
-	}
-	
 	public static function getDifficultyFilePath(num:Null<Int> = null)
 	{
 		if(num == null) num = PlayState.storyDifficulty;
@@ -124,33 +114,18 @@ class CoolUtil
 		return dumbArray;
 	}
 
-	/**
-		Lerps camera, but accountsfor framerate shit?
-		Right now it's simply for use to change the followLerp variable of a camera during update
-		TODO LATER MAYBE:
-			Actually make and modify the scroll and lerp shit in it's own function
-			instead of solely relying on changing the lerp on the fly
-	 */
-	 public static function camLerpShit(lerp:Float):Float
-		{
-			return lerp * (FlxG.elapsed / (1 / 60));
-		}
-	
-		/*
-		* just lerp that does camLerpShit for u so u dont have to do it every time
-		*/
-		public static function coolLerp(a:Float, b:Float, ratio:Float):Float
-		{
-			return FlxMath.lerp(a, b, camLerpShit(ratio));
-		}
-
 	//uhhhh does this even work at all? i'm starting to doubt
 	public static function precacheSound(sound:String, ?library:String = null):Void {
-		Paths.sound(sound, library);
+		precacheSoundFile(Paths.sound(sound, library));
 	}
 
 	public static function precacheMusic(sound:String, ?library:String = null):Void {
-		Paths.music(sound, library);
+		precacheSoundFile(Paths.music(sound, library));
+	}
+
+	private static function precacheSoundFile(file:Dynamic):Void {
+		if (Assets.exists(file, SOUND) || Assets.exists(file, MUSIC))
+			Assets.getSound(file, true);
 	}
 
 	public static function browserLoad(site:String) {
@@ -159,17 +134,5 @@ class CoolUtil
 		#else
 		FlxG.openURL(site);
 		#end
-	}
-
-	/** Quick Function to Fix Save Files for Flixel 5
-		if you are making a mod, you are gonna wanna change "ShadowMario" to something else
-		so Base Psych saves won't conflict with yours
-		@BeastlyGabi
-	**/
-	public static function getSavePath(folder:String = 'ShadowMario'):String {
-		@:privateAccess
-		return #if (flixel < "5.0.0") folder #else FlxG.stage.application.meta.get('company')
-			+ '/'
-			+ FlxSave.validate(FlxG.stage.application.meta.get('file')) #end;
 	}
 }

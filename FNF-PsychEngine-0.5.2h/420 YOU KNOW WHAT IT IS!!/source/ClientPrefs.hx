@@ -8,13 +8,6 @@ import Controls;
 
 class ClientPrefs {
 	public static var downScroll:Bool = false;
-
-	public static var radarMech:String = 'Default';
-	public static var auraMech:String  = 'Default';
-	public static var auraScroll:Float = 1.2;
-	public static var auraVolume:Float = 0.7;
-	public static var radarVolume:Float = 1;
-
 	public static var middleScroll:Bool = false;
 	public static var showFPS:Bool = true;
 	public static var flashing:Bool = true;
@@ -36,7 +29,7 @@ class ClientPrefs {
 	public static var healthBarAlpha:Float = 1;
 	public static var controllerMode:Bool = false;
 	public static var hitsoundVolume:Float = 0;
-	public static var pauseMusic:String = 'Breakfast';
+	public static var pauseMusic:String = 'Tea Time';
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative', 
@@ -55,8 +48,7 @@ class ClientPrefs {
 		'instakill' => false,
 		'practice' => false,
 		'botplay' => false,
-		'opponentplay' => false,
-		
+		'opponentplay' => false
 	];
 
 	public static var comboOffset:Array<Int> = [0, 0, 0, 0];
@@ -100,8 +92,6 @@ class ClientPrefs {
 
 	public static function saveSettings() {
 		FlxG.save.data.downScroll = downScroll;
-		FlxG.save.data.radarMech = radarMech;
-		FlxG.save.data.auraMech = auraMech;
 		FlxG.save.data.middleScroll = middleScroll;
 		FlxG.save.data.showFPS = showFPS;
 		FlxG.save.data.flashing = flashing;
@@ -133,9 +123,6 @@ class ClientPrefs {
 		FlxG.save.data.gameplaySettings = gameplaySettings;
 		FlxG.save.data.controllerMode = controllerMode;
 		FlxG.save.data.hitsoundVolume = hitsoundVolume;
-		FlxG.save.data.auraVolume = auraVolume;
-		FlxG.save.data.auraScroll = auraScroll;
-		FlxG.save.data.radarVolume = radarVolume;
 		FlxG.save.data.pauseMusic = pauseMusic;
 	
 		FlxG.save.flush();
@@ -148,17 +135,9 @@ class ClientPrefs {
 	}
 
 	public static function loadPrefs() {
-
-		if(FlxG.save.data.radarMech != null) {
-			radarMech = FlxG.save.data.radarMech;
-		}
-		if(FlxG.save.data.auraMech != null) {
-			auraMech = FlxG.save.data.auraMech;
-		}
 		if(FlxG.save.data.downScroll != null) {
 			downScroll = FlxG.save.data.downScroll;
 		}
-		
 		if(FlxG.save.data.middleScroll != null) {
 			middleScroll = FlxG.save.data.middleScroll;
 		}
@@ -247,16 +226,6 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.hitsoundVolume != null) {
 			hitsoundVolume = FlxG.save.data.hitsoundVolume;
-		}
-		
-		if(FlxG.save.data.auraVolume != null) {
-			auraVolume = FlxG.save.data.auraVolume;
-		}	
-		if(FlxG.save.data.auraScroll != null) {
-			auraScroll = FlxG.save.data.auraScroll;
-		}
-		if(FlxG.save.data.radarVolume != null) {
-			radarVolume = FlxG.save.data.radarVolume;
 		}
 		if(FlxG.save.data.pauseMusic != null) {
 			pauseMusic = FlxG.save.data.pauseMusic;
